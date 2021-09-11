@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: hsl(210, 46%, 95%);
+	main {
+		font-family: "Barlow Semi Condensed";
+		text-align: left;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(1fr 1fr 1fr 1fr 1fr);
+		grid-column-gap: 15px;
+		grid-row-gap: 15px;
+		margin-left: 10%;
+		section {
+			width: 80%;
+			padding: 1em;
+			display: flex;
+			flex-direction: column;
+			border-radius: 2%;
+			margin-bottom: 1.5em;
+			div {
+				display: flex;
+				img {
+					width: 2.5em;
+					border-radius: 100%;
+					border: white 1px solid;
+				}
+				div {
+					h3 {
+						font-size: 1rem;
+						margin-left: 0.5em;
+						margin-top: 0.2em;
+						color: hsl(0, 0%, 81%);
+					}
+					p {
+						font-size: 0.8rem;
+						color: hsl(0, 0%, 81%);
+						opacity: 0.7;
+						margin-left: 0.7em;
+					}
+					display: flex;
+					flex-direction: column;
+				}
+			}
+			h2 {
+				margin-top: 0.6em;
+				color: white;
+				opacity: 0.8;
+				font-size: 1.3rem;
+			}
+			.mainText {
+				margin-top: 1em;
+				color: hsl(0, 0%, 81%);
+				opacity: 0.7;
+			}
+		}
+		.firstContainer {
+			grid-area: 1 / 1 / 2 / 2;
+			margin-top: 3em;
+			background: hsl(263, 55%, 52%);
+		}
+		.secondContainer {
+			grid-area: 2 / 1 / 3 / 2;
+			background: hsl(217, 19%, 35%);
+		}
+		.thirdContainer {
+			grid-area: 3 / 1 / 4 / 2;
+			background: white;
+			h2 {
+				color: hsl(219, 29%, 14%);
+			}
+			p {
+				color: hsl(219, 29%, 14%);
+			}
+			h3 {
+				color: hsl(219, 29%, 14%);
+			}
+		}
+		.fourthContainer {
+			grid-area: 4 / 1 / 5 / 2;
+			background: hsl(219, 29%, 14%);
+		}
+		.fifthContainer {
+			grid-area: 5 / 1 / 6 / 2;
+			background: white;
+			h3 {
+				color: hsl(219, 29%, 14%);
+			}
+			h2 {
+				color: hsl(219, 29%, 14%);
+			}
+			p {
+				color: hsl(219, 29%, 14%);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		main {
+			width: 50%;
+			margin-left: 28%;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	body {
+		main {
+			margin-top: 5em;
+			width: 96%;
+			margin-left: 2em;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(1, 1fr);
+			grid-column-gap: 0px;
+			grid-row-gap: 0px;
+			p {
+				font-size: 1.1rem;
+			}
+			.firstContainer {
+				grid-area: 1 / 1 / 2 / 3;
+				width: 90%;
+				margin-top: 0;
+			}
+			.secondContainer {
+				grid-area: 1 / 3 / 2 / 4;
+			}
+			.thirdContainer {
+				grid-area: 2 / 1 / 3 / 2;
+			}
+			.fourthContainer {
+				grid-area: 2 / 2 / 3 / 4;
+				width: 90%;
+			}
+			.fifthContainer {
+				grid-area: 1 / 4 / 3 / 5;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	body {
+		main {
+			margin-left: 10em;
+			max-width: 80%;
+		}
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	body {
+		main {
+			max-width: 65%;
+			margin-left: 22em;
+			margin-top: 10em;
+			.firstContainer:hover {
+				transform: scale(1.05, 1.05);
+			}
+			.secondContainer:hover {
+				transform: scale(1.05, 1.05);
+			}
+			.thirdContainer:hover {
+				transform: scale(1.05, 1.05);
+			}
+			.fourthContainer:hover {
+				transform: scale(1.05, 1.05);
+			}
+			.fifthContainer:hover {
+				transform: scale(1.05, 1.05);
+			}
+		}
+	}
+}
